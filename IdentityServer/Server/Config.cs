@@ -73,6 +73,22 @@ namespace Server
                     AllowPlainTextPkce = false,
                     RequireClientSecret = false
                 },
+
+                new Client
+                {
+                    ClientId = "spaClient",
+                    //ClientSecrets = { new Secret("ClientSecret1".Sha256()) },
+                    AllowedGrantTypes = GrantTypes.Code,
+                    RedirectUris = { "http://localhost:4200/signin-oidc" },
+                    FrontChannelLogoutUri = "http://localhost:4200/signout-oidc",
+                    PostLogoutRedirectUris = { "http://localhost:4200/signout-callback-oidc" },
+                    AllowOfflineAccess = true,
+                    AllowedScopes = { "openid", "profile", "el.manage" },
+                    RequirePkce = true,
+                    RequireConsent = true,
+                    AllowPlainTextPkce = false,
+                    RequireClientSecret = false
+                },
             };
     }
 }
