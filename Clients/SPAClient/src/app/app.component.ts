@@ -40,11 +40,11 @@ export class AppComponent implements OnInit {
 
     this.soapService.callSoapService(requestXml).subscribe(
       (response) => {
-        console.log('SOAP Response:', response);
+        alert('SOAP Response: ' + response);
         // Parse the XML response if needed
       },
       (error) => {
-        console.error('SOAP Error:', error);
+        alert('SOAP Error: '+ error);
       }
     );
   }

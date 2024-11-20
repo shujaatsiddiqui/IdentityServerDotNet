@@ -3,8 +3,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 
 const routes: Routes = [
-  { path: 'signin-oidc', component: AppComponent }, // Route for handling the redirect 
-  { path: 'signout-oidc', component: AppComponent }, // Route for handling the redirect
+  { path: 'signin-oidc', redirectTo:'' }, // Route for handling the redirect 
+  { path: 'signout-callback-oidc', redirectTo:''  }, // Route for handling the redirect
+  { path: 'signout-oidc', redirectTo:''  }, // Route for handling the redirect
   { path: '', component: AppComponent }, // Default route
 ];
 
