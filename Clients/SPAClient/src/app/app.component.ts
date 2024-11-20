@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { OAuthService } from 'angular-oauth2-oidc';
 import { authConfig } from './Config/auth-config';
+import { SoapService } from './services/soap-service.service';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,7 @@ import { authConfig } from './Config/auth-config';
 export class AppComponent implements OnInit {
   accessToken: string | null = null;
 
-  constructor(private oauthService: OAuthService) {}
+  constructor(private oauthService: OAuthService, private soapService: SoapService) {}
 
   ngOnInit(): void {
     this.configureOAuth();
@@ -32,5 +33,19 @@ export class AppComponent implements OnInit {
 
   logout(): void {
     this.oauthService.logOut();
+  }
+
+  callSoap() {
+    const requestXml = '<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://tempuri.org/"><soap:Body><ns:GetData><ns:value>123</ns:value></ns:GetData></soap:Body></soap:Envelope>';
+
+    this.soapService.callSoapService(requestXml).subscribe(
+      (response) => {
+        console.log('SOAP Response:', response);
+        // Parse the XML response if needed
+      },
+      (error) => {
+        console.error('SOAP Error:', error);
+      }
+    );
   }
 }

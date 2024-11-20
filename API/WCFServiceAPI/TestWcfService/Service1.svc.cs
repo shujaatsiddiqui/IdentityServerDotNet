@@ -3,8 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
+using System.ServiceModel.Activation;
+using System.ServiceModel.Description;
 using System.ServiceModel.Web;
 using System.Text;
+using System.Web.Routing;
+using System.Web.Services.Description;
+using System.Web;
 
 namespace TestWcfService
 {
@@ -30,4 +35,5 @@ namespace TestWcfService
             return composite;
         }
     }
+
 }

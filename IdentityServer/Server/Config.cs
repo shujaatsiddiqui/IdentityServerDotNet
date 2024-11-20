@@ -23,13 +23,13 @@ namespace Server
         public static IEnumerable<ApiResource> ApiResources =>
             new[]
             {
-                new ApiResource("todoapi")
+                new ApiResource("todoapi") // vcms
                 {
                     Scopes = new List<string> { "todo.read" },
                     ApiSecrets = new List<Secret> { new Secret("ScopeSecret".Sha256()) },
                     UserClaims = new List<string> { "role" }
                 },
-                new ApiResource("elApi")
+                new ApiResource("elApi") // ecms
                 {
                     Scopes = new List<string> { "el.manage" },
                     ApiSecrets = new List<Secret> { new Secret("ScopeSecret".Sha256()) },
@@ -40,6 +40,7 @@ namespace Server
         public static IEnumerable<Client> Clients =>
             new[]
             {
+                // windows client, postman
                 new Client
                 {
                     ClientId = "ELServiceClient",
@@ -58,6 +59,7 @@ namespace Server
                     AllowedScopes = { "todo.read" }
                 },
                 // interactive client using code flow + pkce
+                // courthub
                 new Client
                 {
                     ClientId = "interactive",
@@ -74,6 +76,7 @@ namespace Server
                     RequireClientSecret = false
                 },
 
+                // courthauth
                 new Client
                 {
                     ClientId = "spaClient",
