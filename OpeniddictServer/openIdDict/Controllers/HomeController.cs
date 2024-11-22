@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace Velusia.Server.Controllers;
+namespace CourtAuth.IdentityServer.Controllers;
 
 public class HomeController : Controller
 {

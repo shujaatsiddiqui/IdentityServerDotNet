@@ -14,12 +14,12 @@ using Microsoft.Extensions.Primitives;
 using Microsoft.IdentityModel.Tokens;
 using OpenIddict.Abstractions;
 using OpenIddict.Server.AspNetCore;
-using Velusia.Server.Data;
-using Velusia.Server.Helpers;
-using Velusia.Server.ViewModels.Authorization;
+using CourtAuth.IdentityServer.Data;
+using CourtAuth.IdentityServer.Helpers;
+using CourtAuth.IdentityServer.ViewModels.Authorization;
 using static OpenIddict.Abstractions.OpenIddictConstants;
 
-namespace Velusia.Server.Controllers;
+namespace CourtAuth.IdentityServer.Controllers;
 
 public class AuthorizationController : Controller
 {

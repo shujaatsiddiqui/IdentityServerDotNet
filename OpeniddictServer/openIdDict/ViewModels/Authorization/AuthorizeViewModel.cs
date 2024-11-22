@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace Velusia.Server.ViewModels.Authorization;
+namespace CourtAuth.IdentityServer.ViewModels.Authorization;
 
 public class AuthorizeViewModel
 {

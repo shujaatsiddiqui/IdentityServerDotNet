@@ -4,10 +4,10 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using OpenIddict.Abstractions;
-using Velusia.Server.Data;
+using CourtAuth.IdentityServer.Data;
 using static OpenIddict.Abstractions.OpenIddictConstants;
 
-namespace Velusia.Server;
+namespace CourtAuth.IdentityServer;
 
 public class Worker : IHostedService
 {

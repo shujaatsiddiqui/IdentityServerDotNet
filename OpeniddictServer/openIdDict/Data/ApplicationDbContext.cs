@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace Velusia.Server.Data;
+namespace CourtAuth.IdentityServer.Data;
 
 public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
 {

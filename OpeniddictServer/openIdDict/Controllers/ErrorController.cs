@@ -6,9 +6,9 @@
 
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Mvc;
-using Velusia.Server.ViewModels.Shared;
+using CourtAuth.IdentityServer.ViewModels.Shared;
 
-namespace Velusia.Server.Controllers;
+namespace CourtAuth.IdentityServer.Controllers;
 
 public class ErrorController : Controller
 {
