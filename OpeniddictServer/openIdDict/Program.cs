@@ -81,9 +81,19 @@ builder.Services.AddOpenIddict()
                .SetTokenEndpointUris("connect/token")
                .SetUserinfoEndpointUris("connect/userinfo");
 
+        var issuer = configuration["Authentication:Issuer"];
+        options.SetIssuer(issuer);
+
         options.RegisterScopes(Scopes.Email, Scopes.Profile, Scopes.Roles,Scopes.OpenId);
 
         options.AllowAuthorizationCodeFlow().RequireProofKeyForCodeExchange();
+
+        // Enable the client credentials flow.
+        options.AllowClientCredentialsFlow();
+        options.AllowRefreshTokenFlow();
+
+        options.DisableAccessTokenEncryption();
+
 
         options.AddDevelopmentEncryptionCertificate()
                .AddDevelopmentSigningCertificate();
