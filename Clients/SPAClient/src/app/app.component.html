@@ -2,6 +2,8 @@
   <button (click)="login()">Login</button>
   <button (click)="logout()">Logout</button>
   <button (click)="getWeatherForecast()">Call API</button>
+  
+  <button (click)="callSoap()">Call Soap API</button>
   <div *ngIf="accessToken">
     <h3>Access Token:</h3>
     <textarea readonly>{{ accessToken }}</textarea>

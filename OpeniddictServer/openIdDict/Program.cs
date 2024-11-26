@@ -59,7 +59,7 @@ builder.Services.AddAuthentication()
 
         options.Authority = azureAdOptions.Authority;
         options.ClientId = azureAdOptions.ClientId;
-        options.ClientSecret = azureAdOptions.ClientSecret;
+        options.ClientSecret = builder.Configuration["AzureAd:ClientSecret"]; // Retrieve from secrets.json
         options.CallbackPath = azureAdOptions.CallbackPath;
 
         options.ResponseType = "code"; // Authorization Code flow
@@ -167,6 +167,7 @@ if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
     app.UseMigrationsEndPoint();
+    builder.Configuration.AddUserSecrets<Program>();
 }
 else
 {

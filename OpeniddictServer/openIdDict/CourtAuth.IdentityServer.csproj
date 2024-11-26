@@ -3,6 +3,7 @@
 	<PropertyGroup>
 		<TargetFramework>net8.0</TargetFramework>
 		<CopyRefAssembliesToPublishDirectory>false</CopyRefAssembliesToPublishDirectory>
+		<UserSecretsId>5d7d5985-5923-4079-b0cc-ea1ef0454925</UserSecretsId>
 	</PropertyGroup>
 
 	<ItemGroup>

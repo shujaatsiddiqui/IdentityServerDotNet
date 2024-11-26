@@ -13,8 +13,8 @@ namespace TestWcfService
     {
         private readonly TokenValidationParameters validationParameters;
 
-        public string authority { get; private set; } = "https://localhost:44313";
-        public string audience { get; private set; } = "vcmsAPI";
+        public string authority { get; private set; } = "https://localhost:44313/";
+        public string audience { get; private set; } = "resource-server";
 
         public JwtTokenInspector()
         {
@@ -29,7 +29,7 @@ namespace TestWcfService
                 {
                     // Fetch signing keys from IdentityServer
                     var configurationManager = new ConfigurationManager<OpenIdConnectConfiguration>(
-                        $"{authority}/.well-known/openid-configuration",
+                        $"{authority}.well-known/openid-configuration",
                         new OpenIdConnectConfigurationRetriever());
                     var config = configurationManager.GetConfigurationAsync().Result;
                     return config.SigningKeys;
