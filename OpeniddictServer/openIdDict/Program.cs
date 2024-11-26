@@ -10,6 +10,10 @@ using static OpenIddict.Abstractions.OpenIddictConstants;
 using System;
 using CourtAuth.IdentityServer;
 using Microsoft.Extensions.Configuration;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.OpenIdConnect;
+using System.Threading.Tasks;
+using CourtAuth.IdentityServer.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -48,6 +52,23 @@ builder.Services.AddQuartz(options =>
 });
 builder.Services.AddQuartzHostedService(options => options.WaitForJobsToComplete = true);
 
+builder.Services.AddAuthentication()
+    .AddOpenIdConnect("AAD", "Microsoft", options =>
+    {
+        var azureAdOptions = builder.Configuration.GetSection("AzureAd").Get<AzureAdOptions>();
+
+        options.Authority = azureAdOptions.Authority;
+        options.ClientId = azureAdOptions.ClientId;
+        options.ClientSecret = azureAdOptions.ClientSecret;
+        options.CallbackPath = azureAdOptions.CallbackPath;
+
+        options.ResponseType = "code"; // Authorization Code flow
+        options.SaveTokens = true;
+        options.Scope.Add("openid");
+        options.Scope.Add("profile");
+        options.Scope.Add("email");
+        options.RequireHttpsMetadata = true;
+    });
 // Configure OpenIddict
 builder.Services.AddOpenIddict()
     .AddCore(options =>
@@ -81,7 +102,7 @@ builder.Services.AddOpenIddict()
                .SetTokenEndpointUris("connect/token")
                .SetUserinfoEndpointUris("connect/userinfo");
 
-        options.RegisterScopes(Scopes.Email, Scopes.Profile, Scopes.Roles,Scopes.OpenId);
+        options.RegisterScopes(Scopes.Email, Scopes.Profile, Scopes.Roles, Scopes.OpenId);
 
         options.AllowAuthorizationCodeFlow().RequireProofKeyForCodeExchange();
 
@@ -127,7 +148,7 @@ await using (var scope = app.Services.CreateAsyncScope())
 
 #if DEBUG
     await OpenIddictSeedData.SeedAsync(scope.ServiceProvider);
-    await IdentitySeedData.SeedUsers(scope.ServiceProvider); 
+    await IdentitySeedData.SeedUsers(scope.ServiceProvider);
 #endif
 }
 
