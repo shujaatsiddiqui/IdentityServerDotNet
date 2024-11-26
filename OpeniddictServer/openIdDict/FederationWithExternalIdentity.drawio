@@ -1,0 +1,125 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="24.9.1">
+  <diagram name="Page-1" id="N-vCrlfNmjZPOmIQxpZx">
+    <mxGraphModel dx="2666" dy="2094" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="tdG6Cc6GWgLdCg2rUvfb-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="tdG6Cc6GWgLdCg2rUvfb-1" target="tdG6Cc6GWgLdCg2rUvfb-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tdG6Cc6GWgLdCg2rUvfb-18" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;1&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="tdG6Cc6GWgLdCg2rUvfb-3" vertex="1" connectable="0">
+          <mxGeometry x="0.3664" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tdG6Cc6GWgLdCg2rUvfb-1" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Courthub&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Attorney Portal&lt;/span&gt;&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;AccessPortal&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="350" y="340" width="180" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="tdG6Cc6GWgLdCg2rUvfb-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="tdG6Cc6GWgLdCg2rUvfb-2" target="tdG6Cc6GWgLdCg2rUvfb-13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tdG6Cc6GWgLdCg2rUvfb-22" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;4&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="tdG6Cc6GWgLdCg2rUvfb-14" vertex="1" connectable="0">
+          <mxGeometry x="-0.0865" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tdG6Cc6GWgLdCg2rUvfb-2" value="&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;Court Auth&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Login Page&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="874.5" y="94.25" width="150" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="tdG6Cc6GWgLdCg2rUvfb-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="tdG6Cc6GWgLdCg2rUvfb-4" target="tdG6Cc6GWgLdCg2rUvfb-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tdG6Cc6GWgLdCg2rUvfb-19" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;2&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="tdG6Cc6GWgLdCg2rUvfb-7" vertex="1" connectable="0">
+          <mxGeometry x="-0.2164" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tdG6Cc6GWgLdCg2rUvfb-4" value="AAD Login" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cce5ff;strokeColor=#36393d;" parent="1" vertex="1">
+          <mxGeometry x="899.5" y="104.25" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tdG6Cc6GWgLdCg2rUvfb-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="tdG6Cc6GWgLdCg2rUvfb-5" target="tdG6Cc6GWgLdCg2rUvfb-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="680" y="185" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="430" y="-65" />
+              <mxPoint x="430" y="185" />
+              <mxPoint x="874" y="185" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tdG6Cc6GWgLdCg2rUvfb-11" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Return Access Token&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="tdG6Cc6GWgLdCg2rUvfb-10" vertex="1" connectable="0">
+          <mxGeometry x="-0.1451" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tdG6Cc6GWgLdCg2rUvfb-20" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;3&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="tdG6Cc6GWgLdCg2rUvfb-10" vertex="1" connectable="0">
+          <mxGeometry x="-0.7621" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tdG6Cc6GWgLdCg2rUvfb-5" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Microsoft Login&amp;nbsp;&lt;/font&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Page&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="250" y="-140" width="150" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="tdG6Cc6GWgLdCg2rUvfb-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="tdG6Cc6GWgLdCg2rUvfb-13" target="tdG6Cc6GWgLdCg2rUvfb-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tdG6Cc6GWgLdCg2rUvfb-17" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;Return New Access Token&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="tdG6Cc6GWgLdCg2rUvfb-15" vertex="1" connectable="0">
+          <mxGeometry x="0.7381" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tdG6Cc6GWgLdCg2rUvfb-23" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;5&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="tdG6Cc6GWgLdCg2rUvfb-15" vertex="1" connectable="0">
+          <mxGeometry x="-0.2408" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tdG6Cc6GWgLdCg2rUvfb-13" value="&lt;ul style=&quot;font-size: 16px;&quot;&gt;&lt;li&gt;Adding custom permission&lt;/li&gt;&lt;li&gt;Create new Access Token&lt;/li&gt;&lt;li&gt;Refresh Token&lt;/li&gt;&lt;li&gt;Id Token&lt;/li&gt;&lt;/ul&gt;" style="whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="820" y="550" width="260" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="tdG6Cc6GWgLdCg2rUvfb-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="tdG6Cc6GWgLdCg2rUvfb-29" target="tdG6Cc6GWgLdCg2rUvfb-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tdG6Cc6GWgLdCg2rUvfb-40" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;Goes To CA Portal&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="tdG6Cc6GWgLdCg2rUvfb-30" vertex="1" connectable="0">
+          <mxGeometry x="-0.2436" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tdG6Cc6GWgLdCg2rUvfb-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="tdG6Cc6GWgLdCg2rUvfb-29" target="tdG6Cc6GWgLdCg2rUvfb-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tdG6Cc6GWgLdCg2rUvfb-38" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;Already Registered in AAD&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="tdG6Cc6GWgLdCg2rUvfb-37" vertex="1" connectable="0">
+          <mxGeometry x="-0.074" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tdG6Cc6GWgLdCg2rUvfb-29" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="220" y="210" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8g_nwZ7Es5s3ZTehWpRI-1" value="" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1110" y="60" width="280" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="8g_nwZ7Es5s3ZTehWpRI-3" value="&lt;b&gt;VCMS API&amp;nbsp;&lt;/b&gt;&lt;div&gt;&lt;b&gt;(scp : vcms.manage)&lt;/b&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="120" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="8g_nwZ7Es5s3ZTehWpRI-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.16;entryY=0.55;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="tdG6Cc6GWgLdCg2rUvfb-2" target="8g_nwZ7Es5s3ZTehWpRI-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8g_nwZ7Es5s3ZTehWpRI-5" value="" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1110" y="260" width="280" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="8g_nwZ7Es5s3ZTehWpRI-6" value="&lt;b&gt;ECMS API&amp;nbsp;&lt;/b&gt;&lt;div&gt;&lt;b&gt;(scp : vcms.manage)&lt;/b&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="320" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="8g_nwZ7Es5s3ZTehWpRI-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.16;entryY=0.55;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" target="8g_nwZ7Es5s3ZTehWpRI-5" source="tdG6Cc6GWgLdCg2rUvfb-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1025" y="369" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="1080" y="207" />
+              <mxPoint x="1080" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
