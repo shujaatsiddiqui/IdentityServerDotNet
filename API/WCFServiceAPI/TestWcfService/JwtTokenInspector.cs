@@ -13,8 +13,8 @@ namespace TestWcfService
     {
         private readonly TokenValidationParameters validationParameters;
 
-        public string authority { get; private set; } = "https://localhost:5443";
-        public string audience { get; private set; } = "elApi";
+        public string authority { get; private set; } = "https://localhost:44313";
+        public string audience { get; private set; } = "vcmsAPI";
 
         public JwtTokenInspector()
         {

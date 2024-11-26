@@ -1,7 +1,7 @@
 <div class="app-container">
   <button (click)="login()">Login</button>
   <button (click)="logout()">Logout</button>
-  <button (click)="callSoap()">Call SOAP API</button>
+  <button (click)="getWeatherForecast()">Call API</button>
   <div *ngIf="accessToken">
     <h3>Access Token:</h3>
     <textarea readonly>{{ accessToken }}</textarea>

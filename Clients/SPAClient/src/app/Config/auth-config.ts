@@ -6,7 +6,7 @@ export const authConfig: AuthConfig = {
   postLogoutRedirectUri : window.location.origin + '/signout-callback-oidc',
   clientId: 'spaClient',
   responseType: 'code',
-  scope: 'openid profile el.manage',
+  scope: 'openid profile el.manage vcms.manage',
   showDebugInformation: true,
   sessionChecksEnabled: true,
   disableAtHashCheck: true,

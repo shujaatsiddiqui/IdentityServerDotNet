@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using System;
 using Microsoft.Extensions.DependencyInjection;
+using IdentityModel;
 
 public static class OpenIddictSeedData
 {
@@ -46,6 +47,27 @@ public static class OpenIddictSeedData
             });
         }
 
+        if (await manager.FindByClientIdAsync("vcmsAPI") is null)
+        {
+            await manager.CreateAsync(new OpenIddictApplicationDescriptor
+            {
+                ClientId = "vcmsAPI",
+                DisplayName = "vcsm api resource",
+                ClientSecret = "vcmssecret".ToSha256(), 
+                Permissions =
+                {
+                    // Allow authorization code flow
+                    OpenIddictConstants.Permissions.GrantTypes.ClientCredentials,
+                    // Allow access to the `vcms.manage` scope
+                    "scp:vcms.manage", 
+                    // Allow token endpoint
+                    OpenIddictConstants.Permissions.Endpoints.Token
+                }
+            });
+        }
+
+
+
         // Optional: Register custom scopes if not already present
         var scopeManager = scope.ServiceProvider.GetRequiredService<IOpenIddictScopeManager>();
         if (await scopeManager.FindByNameAsync("el.manage") is null)
@@ -56,5 +78,16 @@ public static class OpenIddictSeedData
                 Resources = { "resource-server" } // Add your resource identifiers here
             });
         }
+
+        if (await scopeManager.FindByNameAsync("vcms.manage") is null)
+        {
+            await scopeManager.CreateAsync(new OpenIddictScopeDescriptor
+            {
+                Name = "vcms.manage",
+                Resources = { "vcmsAPI" }
+                // Associate the scope with the API resource 
+            });
+        }
+
     }
 }

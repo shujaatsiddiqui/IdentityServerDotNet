@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { OAuthService } from 'angular-oauth2-oidc';
 import { authConfig } from './Config/auth-config';
 import { SoapService } from './services/soap-service.service';
+import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
@@ -10,8 +12,11 @@ import { SoapService } from './services/soap-service.service';
 })
 export class AppComponent implements OnInit {
   accessToken: string | null = null;
+  private apiUrl = 'https://localhost:7256/WeatherForecast';  // Your Web API URL
+  weatherData!: any[];
 
-  constructor(private oauthService: OAuthService, private soapService: SoapService) {}
+  constructor(private oauthService: OAuthService, private soapService: SoapService,
+    private http: HttpClient  ) {}
 
   ngOnInit(): void {
     this.configureOAuth();
@@ -47,5 +52,18 @@ export class AppComponent implements OnInit {
         alert('SOAP Error: '+ error);
       }
     );
+  }
+
+  getWeatherForecast(): void {
+    this.http.get<any[]>(this.apiUrl)
+      .subscribe(
+        (data) => {
+          this.weatherData = data;  // Store the data in a variable
+          console.log(data);  // Log the data to console
+        },
+        (error) => {
+          console.error('Error fetching weather data', error);  // Handle errors
+        }
+      );
   }
 }
